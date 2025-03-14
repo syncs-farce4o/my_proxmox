@@ -32,4 +32,13 @@ lvremove /dev/pve/data<br/>
 lvresize -l +100%FREE /dev/pve/root<br/>
 resize2fs -p /dev/pve/root
 
-Datacenter->Storage->local-lvm->remove
+Datacenter->Storage->local-lvm->remove<br/>
+local->edit->add all content
+
+## 구독경고 없애기
+Datacenter->host->Shell
+
+cp /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js.bak<br/>
+sed -i "s/\tExt.Msg.show/void/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
+
+## windows11 Install on VM

@@ -42,3 +42,11 @@ cp /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js /usr/share/javascr
 sed -i "s/\tExt.Msg.show/void/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
 
 ## windows11 Install on VM
+
+## LXC
+pveam update</br>
+pveam list local</br>
+가능한 리스트중에 하나를 선택</br>
+ex) pveam download local ubuntu-24.10-standard_24.10-1_amd64.tar.zst</br>
+pveam list local
+

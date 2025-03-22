@@ -88,3 +88,9 @@ services:
       - ./mysql:/var/lib/mysql
 
 docker-compose up -d
+
+### nignx초기설정
+admin@example.com
+changeme
+
+
